@@ -1,61 +1,91 @@
 html{
-				font-size: 62.5%;
-			}
-			body{
-				width: 100%;
-				height: auto;
-				margin:0;
-				padding:0;
-				background-color: #68cdd5;
-				color: white;
-			}
-			.jt{
-				width: 97%;
-				height:6rem;
-				margin-left: 3%;
-				margin-top: 1rem;
-			}
-			.log{
-				width: 100%;
-				height:16rem;
-				text-align: center;
-			}
-			.log img{
-				display: block;
-				width: 9.1rem;
-				margin: 0 auto;
-			}
-			.content{
-				width: 100%;
-				height:22rem;
-				overflow: hidden;
-				
-			}
-			.content p{
-				width: 70%;
-				margin-top: 0;
-				margin-left: 15%;
-				margin-right: 15%;
-				font-size: 1.2rem;
-				line-height: 2rem;
-				letter-spacing:0.2rem;
-			}
-			.bom{
-				width: 100%;
-				height: 17rem;
-			}
-			.left{
-				position: absolute;
-				left:5rem;
-				top:50rem;
-			}
-			.right{
-				position: absolute;
-				right:5rem;
-				top:50rem;
-			}
-			.left p,.right p{
-				position: relative;
-				top: 2rem;
-				text-align: center;
-			}
+	font-size: 62.5%;
+	-webkit-transform-origin-x: 0;
+　　	-webkit-transform: scale(0.83333333333333);
+	}
+body{
+	width: 100%;
+	height: auto;
+	margin:0;
+	padding:0;
+	background-color: #68cdd5;
+	color: white;
+	}
+@media screen and (max-width: 768px){
+		.jt img{
+			width: 2.9rem;
+			height: 2.8rem;
+		}
+		.log img{
+			width: 10.8rem;
+		}
+		.bom img{
+			width: 4.3rem;
+			height: 4.3rem;
+		}
+	}
+@media screen and (min-width: 768px){
+		.jt img{
+			width: 5.8rem;
+			height: 5.8rem;
+		}
+		.log img{
+			width: 21.6rem;
+		}
+		.bom img{
+			width: 8.6rem;
+			height: 8.6rem;
+		}
+	}		
+.jt{
+	width: 97%;
+	height:6rem;
+	margin-left: 3%;
+	margin-top: 1rem;
+	}
+.log{
+	width: 100%;
+	height:16rem;
+	text-align: center;
+	}
+.log img{
+		display: block;
+		margin: 0 auto;
+		}
+.content{
+	width: 100%;
+	height:22rem;
+	overflow: hidden;
+	}
+	.content p{
+	width: 70%;
+	margin-top: 0;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	letter-spacing:0.2rem;
+	}
+.bom{
+	width: 100%;
+	height: 17rem;
+	}
+.left{
+	position: absolute;
+	left:5rem;
+	top:50rem;
+	}
+.right{
+	position: absolute;
+	right:5rem;
+	top:50rem;
+	}
+.left p,.right p{
+	position: relative;
+	top: 2rem;
+	text-align: center;
+	}
+			
+
+
+
