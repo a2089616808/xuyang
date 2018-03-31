@@ -68,24 +68,21 @@ body{
 	}
 .bom{
 	width: 100%;
-	height: 8rem;
+	display: inline-block;
+	vertical-align: middle;
 	}
 .left{
-	position: absolute;
-	left:5rem;
-	top:43rem;
-	}
+	float: left;
+	margin-left: 15%;
+}
 .right{
-	position: absolute;
-	right:5rem;
-	top:43rem;
-	}
+	float: right;
+	margin-right: 15%;
+}
 .left p,.right p{
-	position: relative;
-	top: 2rem;
 	text-align: center;
-	}
-			
-
-
+	margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
 
