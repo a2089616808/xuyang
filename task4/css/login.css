@@ -4,24 +4,36 @@ html{
 　　	-webkit-transform: scale(0.83333333333333);
 }
 body{
-	margin:0;
-	padding:0;
+	margin:0rem;
+	padding:0rem;
 	background-color: #eff0f4;
-	color: white;
+	color: #FFF;
 }
 /* TOP样式设置*/
 .top{
 	width: 100%;
-	height:9rem ;
+	height: 9rem;
 	background-color:#5fc0cd ;
 	line-height: 9rem;
 	font-size: 2.5rem;
-	display: inline-flex;
+	text-align: center;
 	position: fixed;
-	left: 0;
-	top: 0;
+	left: 0rem;
+	top: 0rem;
 }
-.start,.center,.end{
+.top a{
+	text-decoration: none;
+	color: #fff;
+}
+.fl{
+	float: left;
+	margin-left: 3rem;
+}
+.fr{
+	float: right;
+	margin-right: 3rem;
+}
+/*.start,.center,.end{
 	position: absolute;
 	}
 .start{
@@ -33,7 +45,7 @@ body{
 }
 .end{
 	right: 3rem;
-	}
+	}*/
 /*表单样式设置*/
 form{
 	margin-top:10rem;
@@ -41,14 +53,14 @@ form{
 .current{
 	width: 100%;
 	height: 10rem;
-	background-color: white;
+	background-color: #FFF;
 	margin-top: 10.5rem;
 	line-height: 10rem;
 }
 .password{
 	width: 100%;
 	height: 10rem;
-	background-color: white;
+	background-color:#FFF;
 	margin-top: 1.2rem;
 	line-height: 10rem;
 }
@@ -56,7 +68,16 @@ form{
 	margin:3rem 4.5rem;
 	vertical-align: middle;
 }
-input::-webkit-input-placeholder{
+input::-webkit-input-placeholder{/*兼容谷歌*/
+	color:#e1e5e7;
+}
+input::-moz-placeholder{/*兼容火狐19以上*/
+	color:#e1e5e7;
+}
+input:-moz-placeholder{/*兼容火狐4--18以上*/
+	color:#e1e5e7;
+}
+input:-ms-input-placeholder{/*兼容IE10以上*/
 	color:#e1e5e7;
 }
 .current input,.password input{
@@ -86,7 +107,7 @@ button{
 .forget a{
 	text-decoration: none;
 	font-size: 2.5rem;
-	color: blue;
+	color: #8bcdd7;
 	float: right;
 	margin-top: 2rem;
 	margin-right: 3rem;
