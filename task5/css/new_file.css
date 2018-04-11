@@ -38,8 +38,8 @@ body{
     */
 }
 .ues_head{
-	width:0.435rem;
-	height: 0.435rem;
+	width:0.6rem;
+	height: 0.6rem;
 	background-color: #efefef;
 	border-radius: 50%;
 	position: absolute;
@@ -55,8 +55,8 @@ body{
 }
 .ues_properyte{
 	position: absolute;
-	top: 0.4rem;
-	left:0.75rem;
+	top: 0.5rem;
+	left:0.9rem;
 	color: #FFF;
 }
 .name{
