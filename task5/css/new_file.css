@@ -2,35 +2,34 @@ html{
 	font-size: 625%;
 }
 body{
-	margin: 0rem;
-	padding: 0rem;
+	margin: 0;
+	padding: 0;
 }
 /*头部*/
 .header{
-	width: 100%;
-	height: 0.4rem;
-	line-height: 0.4rem;
-	background-color: #5fc0cd;
-	color: #fff;
 	position: fixed;
-	top: 0rem;
-	font-size: 0.15rem;
-	text-align: center;
+	top: 0;
 	z-index: 1;
+	width: 100%;
+	line-height: .4rem;
+	text-align: center;
+	color: #fff;
+	font-size: .15rem;
+	background-color: #5fc0cd;
 }
 .header a{
-	color: #FFFFFF;
-	text-decoration: none;
 	position: absolute;
-	left: 0.15rem;
+	left: .15rem;
+	text-decoration: none;
+	color: #FFFFFF;
 }
 .main{
-	margin-top:0.4rem ;
+	margin-top:.4rem ;
 }
 .backdrop{
+	position: relative;
 	width: 100%;
 	height: 1.625rem;
-	position: relative;
 	background: url(../img/bj.png) no-repeat center / cover;
 	 /*有关backgroung-size:
     cover拉伸图片，保持高宽比；
@@ -38,80 +37,76 @@ body{
     */
 }
 .ues_head{
-	width:0.6rem;
-	height: 0.6rem;
+	position: absolute;
+	left: .15rem;
+	top: .4rem;
+	width:.6rem;
+	height:.6rem;
 	background-color: #efefef;
 	border-radius: 50%;
-	position: absolute;
-	left: 0.15rem;
-	top: 0.4rem;
-	/*因为内部图片上是方块的形式，避免图片超出这个div*/
-	overflow: hidden;
 }
 .ues_head img{
 	display: block;
 	width:100%;
 	height:100%;
+	border-radius: 50%;
 }
 .ues_properyte{
 	position: absolute;
-	top: 0.5rem;
-	left:0.9rem;
+	top: .5rem;
+	left:.9rem;
 	color: #FFF;
 }
 .name{
-	font-size:0.13rem ;
-	margin-bottom: 0.075rem;
+	margin-bottom:.075rem;
+	font-size:.13rem ;
 }
 .address{
-	font-size:0.1rem;
+	font-size:.1rem;
 	text-indent: 1.5em;
 	background: url(../img/ico_03.png) no-repeat;
 }
 /*专业技能*/
 
 .skil{
-	height: 0.4rem;
-	line-height: 0.4rem;
-	font-size: 0.13rem;
+	line-height: .4rem;
+	font-size: .13rem;
 }
-.span1{
+.skil_left{
+	margin-left: .15rem;	
 	color: #5FC0CD;
-	margin-left: 0.15rem;	
 }
 /*列表部分*/
 .list{
+	padding-left: .15rem;
 	border-bottom: 1px solid #EFEFEF;
 	border-top:  1px solid #EFEFEF;
-	padding-left: 0.15rem;
 
 }
 .flex_list{
-	/*line-height: 0.4rem;*/
-	
 	display: flex;
-	font-size: 0.13rem;
-	padding:0.1rem 0.05rem 0.1rem 0.13rem;
 	flex-direction: row;
 	align-items: center;
+	font-size: .13rem;
+	padding:.1rem .05rem .1rem .13rem;
 	border-bottom: #EFEFEF solid 1px;
 }
 .five-pointed{
-	margin-right: 0.15rem;
+	margin-right: .15rem;
 }
 .five-pointed img{
 	position: relative;
-	top: 0.022rem;
-	margin-right:0.05rem ;
+	top: .022rem;
+	margin-right:.05rem ;
 }
 
 .flex_list_left{
-	margin-right: 0.15rem;
+	margin-right: .15rem;
 	color: #999999;
 	flex-shrink: 0;
 }
 .flex_list_left1{
-	margin-right: 0.15rem;
+	margin-right: .15rem;
 	color: #e1e5e7;
 }
 }
@@ -120,30 +115,31 @@ body{
 }
 /*页脚*/
 .footer{
-	width: 100%;
 	position: fixed;
-	background-color: #FFFFFF;
-	bottom: 0rem;
+	bottom: 0;
 	display: inline-flex;
+	width: 100%;
+	background-color: #FFFFFF;
 }
 .footer_left,.footer_right{
-	width:50%;
-	height: 0.45rem;
-	font-size: 0.13rem;
 	padding: 0;
-	border-radius: 0.04rem;
+	width:50%;
+	height: .45rem;
+	font-size: .13rem;
+	border-radius: .04rem;
 }
 
 .footer_left{
+	margin:.075rem .065rem .075rem .19rem;
 	color: #5FC0CD;
 	background-color: #FFF;
 	border: 1px solid #5FC0CD;
-	margin:0.075rem 0.065rem 0.075rem 0.19rem;
+	
 }
 .footer_right{
+	margin:.075rem .19rem .075rem .065rem;
 	color: #FFF;
 	background-color:#5fc0cd;
 	border: 1px solid #5FC0CD;
-	margin:0.075rem 0.19rem 0.075rem 0.065rem;
 }
 
