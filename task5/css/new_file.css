@@ -3,7 +3,6 @@ html{
 }
 body{
 	margin: 0;
-	padding: 0;
 }
 /*头部*/
 .header{
@@ -21,7 +20,7 @@ body{
 	position: absolute;
 	left: .15rem;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #fff;
 }
 .main{
 	margin-top:.4rem ;
@@ -55,7 +54,7 @@ body{
 	position: absolute;
 	top: .5rem;
 	left:.9rem;
-	color: #FFF;
+	color: #fff;
 }
 .name{
 	margin-bottom:.075rem;
@@ -74,22 +73,21 @@ body{
 }
 .skil_left{
 	margin-left: .15rem;	
-	color: #5FC0CD;
+	color: #5fc0cd;
 }
 /*列表部分*/
 .list{
 	padding-left: .15rem;
-	border-bottom: 1px solid #EFEFEF;
-	border-top:  1px solid #EFEFEF;
+	border-bottom: 1px solid #5fc0cd;
+	border-top:  1px solid #5fc0cd;
 
 }
 .flex_list{
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	font-size: .13rem;
 	padding:.1rem .05rem .1rem .13rem;
-	border-bottom: #EFEFEF solid 1px;
+	border-bottom: #efefef solid 1px;
 }
 .five-pointed{
 	margin-right: .15rem;
@@ -102,7 +100,7 @@ body{
 
 .flex_list_left{
 	margin-right: .15rem;
-	color: #999999;
+	color: #999;
 	flex-shrink: 0;
 }
 .flex_list_left1{
@@ -117,29 +115,32 @@ body{
 .footer{
 	position: fixed;
 	bottom: 0;
-	display: inline-flex;
+	height: .65rem;
 	width: 100%;
-	background-color: #FFFFFF;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #fff;
 }
 .footer_left,.footer_right{
 	padding: 0;
-	width:50%;
+	width:47%;
 	height: .45rem;
 	font-size: .13rem;
 	border-radius: .04rem;
 }
 
 .footer_left{
-	margin:.075rem .065rem .075rem .19rem;
-	color: #5FC0CD;
-	background-color: #FFF;
-	border: 1px solid #5FC0CD;
+	/*margin:.075rem .065rem .075rem .19rem;*/
+	color: #5fc0cd;
+	background-color: #fff;
+	border: 1px solid #5fc0cd;
 	
 }
 .footer_right{
-	margin:.075rem .19rem .075rem .065rem;
+	/*margin:.075rem .19rem .075rem .065rem;*/
 	color: #FFF;
 	background-color:#5fc0cd;
-	border: 1px solid #5FC0CD;
+	border: 1px solid #5fc0cd;
 }
 
