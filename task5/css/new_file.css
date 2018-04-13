@@ -18,9 +18,16 @@ body{
 }
 .header a{
 	position: absolute;
+	top: 50%;
 	left: .15rem;
+	transform: translateY(-50%);
 	text-decoration: none;
-	color: #fff;
+}
+.header img{
+	display: block;
+	width: .11rem;
+	height: .18rem;
+	
 }
 .main{
 	margin-top:.4rem ;
@@ -78,8 +85,8 @@ body{
 /*列表部分*/
 .list{
 	padding-left: .15rem;
-	border-bottom: 1px solid #5fc0cd;
-	border-top:  1px solid #5fc0cd;
+	border-bottom: 1px solid #e1e5e7;
+	border-top:  1px solid #e1e5e7;
 
 }
 .flex_list{
