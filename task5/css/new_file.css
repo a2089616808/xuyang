@@ -34,7 +34,6 @@ body{
 }
 .backdrop{
 	position: relative;
-	width: 100%;
 	height: 1.625rem;
 	background: url(../img/bj.png) no-repeat center / cover;
 	 /*有关backgroung-size:
@@ -70,6 +69,7 @@ body{
 .address{
 	font-size:.1rem;
 	text-indent: 1.5em;
+	text-align: center;
 	background: url(../img/ico_03.png) no-repeat;
 }
 /*专业技能*/
@@ -77,11 +77,15 @@ body{
 .skil{
 	line-height: .4rem;
 	font-size: .13rem;
+
 }
-.skil_left{
-	margin-left: .15rem;	
-	color: #5fc0cd;
+.skil span{
+	margin-left: .15rem;
+	padding-left: .15rem;
+	text-indent:10px;
+	background: url(../img/skil.png)  no-repeat;
 }
+
 /*列表部分*/
 .list{
 	padding-left: .15rem;
@@ -138,14 +142,12 @@ body{
 }
 
 .footer_left{
-	/*margin:.075rem .065rem .075rem .19rem;*/
 	color: #5fc0cd;
 	background-color: #fff;
 	border: 1px solid #5fc0cd;
 	
 }
 .footer_right{
-	/*margin:.075rem .19rem .075rem .065rem;*/
 	color: #FFF;
 	background-color:#5fc0cd;
 	border: 1px solid #5fc0cd;
