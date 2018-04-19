@@ -5,6 +5,10 @@ body{
 	padding: 0;
 	margin: 0;
 }
+ul,li{
+	margin:0;
+	padding: 0;
+}
 .btn{
 	position: fixed;
 	top: 0;
@@ -27,7 +31,7 @@ body{
 	border-radius: 0.05rem;
 }
 .unselected{
-	color: #FFF;
+	color: #fff;
 	background-color:#55a8b3;
 	
 }
@@ -52,18 +56,35 @@ main{
 }
 .head{
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	line-height: .4rem;
 	font-size: .13rem;
 	border-bottom:1px solid #e1e5e7;
 }
-.head div{
+.head_list{
 	position: relative;
 	flex: 1;
 	text-align: center;
+	cursor: pointer;
 	color:#999 ;
 	border-left:1px solid #e2e6e8;
+}
+.head ul{
+	display: none;
+	position: absolute;
+	width: 100%;
+	background: #fff;
+}
+.head li{
+	list-style: none;
+	border:1px solid #e1e5e7;
+	text-align: center;
+}
+.head_list li:hover{
+	background: #e63b0e;
+}
+.head_list:hover ul{
+	display: block;
 }
 .head div:after{
 	position: absolute;
@@ -98,6 +119,9 @@ main{
 .date{
 	font-weight:bold;
 	padding-right: .2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .date_right{
 	float: right;
