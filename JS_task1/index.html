@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title>九宫格</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+		<button id="start">开始闪</button>
+		<button id="storp">停止闪</button>
+	</body>
+	<script>
+		window.onload=function(){
+			//取随机颜色
+			function getcolor(){
+				return "#"+("00000"+((Math.random()*16777215+0.5)>>0).toString(16)).slice(-6);
+			}
+			//获取dom
+			var boxs=document.getElementsByClassName("box");			
+			//获取随机数			
+			//取3个不同的随机数
+			function Threerandom(){
+				function getrandom(){
+				var lg=boxs.length;
+				return Math.floor(Math.random()*lg);	
+				}
+				var box=Array(3);
+				for( var i=0;i<box.length;i++) {
+					var	rand=getrandom();
+					if(i==0){
+						box[i]=rand;
+					}else{
+						for (j=0;j<i;j++) {
+							if(rand==box[j]){
+								i--;
+							}else{
+								box[i]=rand;
+							}
+						}
+					}
+				}
+				return box;
+			}
+			//改变颜色
+			function  start(){
+				sobj=setInterval(function(){
+					for (i=0;i<boxs.length;i++) {
+						boxs[i].style.backgroundColor="#FFA500";
+					}
+					var boxa=Threerandom();
+					for (i=0;i<boxa.length;i++) {
+						var col=getcolor();
+						if(col=="#FFA500"){
+							i--;
+						}else{
+							if (i==0) {
+								boxs[boxa[i]].style.background = col;
+							}else{
+								for (var j=0; j<i; j++) {
+									if (col== col[j]) {
+										i--;
+									}else {
+										boxs[boxa[i]].style.background = col;
+									}
+								}
+							}						
+						}
+					}	
+				},1000);
+			}
+			//清除颜色
+			function storp(){
+				clearInterval(sobj);
+				for (i=0;i<boxs.length;i++) {
+					boxs[i].style.backgroundColor="#FFA500";
+				}
+			}
+
+			//绑定事件
+			var startobj=document.getElementById("start");
+			var storpobj=document.getElementById("storp");
+			var mystart=true;//添加bloon类型防止启动按钮被多次点击。
+			startobj.onclick=function(){
+				if (mystart) {
+					start();
+				}
+				mystart=false;
+			}
+			storpobj.onclick=function(){
+				storp();
+				mystart=true;
+			}
+		}
+	</script>
+</html>

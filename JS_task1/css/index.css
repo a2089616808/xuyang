@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    width: 96vw;
+    margin: 0 auto;
+}
+.box{
+    width: 30vw;
+    height: 30vw;
+    float: left;
+    margin: 1%;
+    background-color:#FFA500;
+    border-radius: 10px;
+}
+button{
+	width: 100vw;
+	height: 10vw;
+	margin-top: 5px;
+	padding: 0;
+	border: #FFA500 1px solid;
+	font-size: 26px;
+	color: #FFA500;
+	background-color: #fff;
+}
+button:hover,button:active{
+	color: #fff;
+	background-color: #FFA500;
+}
